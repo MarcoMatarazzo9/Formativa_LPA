@@ -10,15 +10,13 @@ public class Arraylist {
 	
 	Random numero_aleatorio = new Random ();
 	
-	for(int i=0; i < 7;i++) {
-		int numeros_aleatorios =numero_aleatorio.nextInt(10);
+	for(int i=0; i < 7; i++) {
+		int numeros_aleatorios = numero_aleatorio.nextInt(100);
 		numeros.add(numeros_aleatorios);
-		
+		}
+	for (int numero : numeros) {
+		System.out.println(numero);
 	}
-	int total=0;
-	for (int i: numeros) {
-		System.out.println(total);
 	}
 
-}
 }
